@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Status: Disconnected" />
+
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect" />
+
+        <TextView
+            android:id="@+id/deviceInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Device info: -" />
+
+        <TextView
+            android:id="@+id/insideTempText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Inside temp: --.- °C" />
+
+        <TextView
+            android:id="@+id/hotTempText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hot side temp: --.- °C" />
+
+        <TextView
+            android:id="@+id/outputStateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Outputs: --" />
+
+        <TextView
+            android:id="@+id/alarmText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alarms: none" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/forcePel1Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Force Peltier 1" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/forcePel2Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Force Peltier 2" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/forceFansSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Force fans" />
+
+        <Button
+            android:id="@+id/clearAlarmsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Clear alarms" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Control parameters" />
+
+        <EditText
+            android:id="@+id/setpointInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Setpoint (°C)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/hysteresisInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hysteresis (°C)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/hotCutInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hot cut-off (°C)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/hotResumeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hot resume (°C)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/fanRunOnInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fan run-on (s)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/applyParamsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Apply parameters" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Wi-Fi credentials" />
+
+        <EditText
+            android:id="@+id/ssidInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wi-Fi SSID" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wi-Fi password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/sendWifiButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Send Wi-Fi credentials" />
+
+    </LinearLayout>
+</ScrollView>
